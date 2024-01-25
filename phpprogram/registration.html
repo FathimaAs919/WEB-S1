@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        input, select {
+            margin-bottom: 10px;
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form action="registration1.php" method="post">
+        <h1>REGISTRATION PAGE</h1>
+        First Name: <input type="text" name="txt1"><br>
+        Last Name: <input type="text" name="txt2"><br>
+        Password: <input type="password" name="txt3"><br>
+        Age: <input type="text" name="txt4"><br>
+        Gender: Male <input type="radio" name="rd" value="male"> Female <input type="radio" name="rd" value="female"><br>
+        Languages known:
+        PHP <input type="checkbox" name="chk[]" value="PHP">
+        C <input type="checkbox" name="chk[]" value="C">
+        CPP <input type="checkbox" name="chk[]" value="CPP">
+        JAVA <input type="checkbox" name="chk[]" value="JAVA"><br>
+        <button type="submit">SUBMIT</button>
+    </form>
+</body>
+</html>
