@@ -1,0 +1,20 @@
+
+
+    body{
+        background-color:pink;
+   
+  background-size: cover;
+
+    }
+    
+    .pheading{
+
+        text-align:center;
+        font-size:x-large;
+        color: rgb(96, 4, 19);
+    }
+    .price{
+        font-style:italic;
+        color:aqua;
+    }
+    

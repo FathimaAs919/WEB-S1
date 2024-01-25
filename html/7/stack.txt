@@ -1,0 +1,66 @@
+#include<stdio.h>
+#include<stdlib.h>
+# define size 20
+int a[size];
+int no;
+void push();
+void pop();
+
+int rear=-1;
+int main
+{
+    while(1)
+    {
+        printf("1.push");
+        printf("2.pop");
+        printf("3.exit");
+        scanf("%d",&ch);
+        switch (ch)
+        case (1):
+        {
+            push();
+        break;
+        }
+        case (2):
+        {
+            pop();
+            break;
+        }
+        case(3):
+        {
+         exit(0);
+        }
+          default:
+          {
+          printf("you are fool");
+          
+    }
+} void push()
+{
+    if(rear==size-1)
+    {
+        print("full");
+        
+    }
+    else
+     rear=0;
+     printf("enter element");
+     scanf("%d",&no);
+     a[size]=no;
+}
+void pop()
+{
+    if(rear==-1)
+    {
+        printf("empty");
+    }
+    else
+     for(i=rear;i<;i++)
+     {
+         a
+     }
+    
+}
+
+
+

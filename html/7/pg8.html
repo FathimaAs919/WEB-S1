@@ -1,0 +1,49 @@
+<html>
+    <head><title>
+        quiz
+    </title>
+    <style>
+        .b{
+            font-size: 20px;
+        }
+    </style>
+    </head>
+    <body class="b">
+        <h1>ONLINE EXAMINATION</h1>
+        <label>Question 1:</label>
+        <br>
+        <label>Tell me if you ...........any help</label>
+        <br>
+        <input type="radio" id="a" name="need">need
+        <input type="radio"  name="need">will need
+        <input type="radio"  name="need">would need
+        <br><br>
+        <label>The first time I ...........him was at university</label>
+        <br>
+        <input type="radio"  name="need">had met
+        <input type="radio"  name="need">have met
+        <input type="radio" id="b" name="need">met
+        <br><br>
+        <label>This is the garage ...........they used to work</label>
+        <br>
+        <input type="radio" name="need">which
+        <input type="radio" id="c"  name="need">where
+        <input type="radio"  name="need">that
+        <br>
+        <br>
+        <label>I ...........a terrible experience yesterday</label>
+        <br>
+        <input type="radio" id="d" name="need">had
+        <input type="radio"  name="need">have
+        <input type="radio"  name="need">had had
+        <button onclick="funsub()">sum</button>
+        
+        <script>
+            function funsub()
+            {
+                if(document.getElementById(qi).checked)
+                score=score+1
+            }
+        </script>
+    </body>
+    <html>

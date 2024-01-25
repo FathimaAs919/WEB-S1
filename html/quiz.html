@@ -1,0 +1,128 @@
+<html>
+
+<head>
+<title>Quiz</title>
+ </head>
+ <style>
+ body{
+ background- color: blue;
+ }
+ p {
+ font-weight: bold;
+ color:white;
+ }
+ </style>
+ <body>
+ <form>
+ <h1>Online Quiz</h1>
+ 
+ 
+ <p> Q1.<br>
+ ------ is the Father of Nation<br>
+ <input type="radio" name="country" id="q1">Gandhiji
+ <input type="radio" name="country">Nehru
+ <input type="radio" name="country">Manmohan Singh
+ <input type="radio" name="country">Other
+ <br><br>
+ 
+ 
+ Q2.<br>
+ ------ is the Prime Minister of India<br>
+ <input type="radio" name="kk">APJ Abdul Kalam
+ <input type="radio" name="kk">Manmohan Singh
+ <input type="radio" name="kk" id="q2">Narendra Modi
+ <input type="radio" name="kk">Rahul Gandhi
+ <br><br>
+ 
+ Q3.<br>
+ ------ is top color of indian flag<br>
+ <input type="radio" name="jj">green
+ <input type="radio" name="jj">yellow
+ <input type="radio" name="jj" id="q3">Saffron
+ <input type="radio" name="jj">Orange
+ <br><br>
+ 
+ Q4.<br>
+ ------ is the current year<br>
+ <input type="radio" name="hh">2022
+ <input type="radio" name="hh">2021
+ <input type="radio" name="hh" id="q4">2023
+ <input type="radio" name="hh">2000
+ <br><br>
+ 
+ Q5.<br>
+ ------ is known as Carbon dioxide<br>
+ <input type="radio" name="gg" id="q5">CO2
+ <input type="radio" name="gg">H2O
+ <input type="radio" name="gg">CCO
+ <input type="radio" name="gg">O2
+ <br><br>
+ 
+ Q6.<br>
+ ------ is my country<br>
+ <input type="radio" name="ii" id="q6">India
+ <input type="radio" name="ii">Pakisthan
+ <input type="radio" name="ii">China
+ <input type="radio" name="ii">Cargo
+ <br><br>
+ 
+ Q7.<br>
+ ------ is the brother of Thor in Norse Mythology<br>
+ <input type="radio" name="oo" id="q7">Loki
+ <input type="radio" name="oo">Hela
+ <input type="radio" name="oo">Odin
+ <input type="radio" name="oo">Valkyrie
+ <br><br>
+ 
+ Q8.<br>
+ ------ ended on Dec 31, 2022<br>
+ <input type="radio" name="aa" id="q8">2022
+ <input type="radio" name="aa">2024
+ <input type="radio" name="aa">2021
+ <input type="radio" name="aa">2023
+ <br><br>
+ 
+ Q9.<br>
+ ------ can be found in every home<br>
+ <input type="radio" name="ww" id="q9">TV
+ <input type="radio" name="ww">Car
+ <input type="radio" name="ww">Fan
+ <input type="radio" name="ww">Porsche
+ <br><br>
+ 
+ Q10.<br>
+ In ------ corona was reported for the first time<br>
+ <input type="radio" name="dd" id="q10">2020
+ <input type="radio" name="dd">2024
+ <input type="radio" name="dd">2023
+ <input type="radio" name="dd">2000
+ <br><br></p>
+ 
+ <button type="button" onclick="calculateScore()">Submit</button></form>
+ 
+ <script>
+ function calculateScore() {
+ var score = 0;
+ if (document.getElementById("q1").checked)
+ score++;
+ if (document.getElementById("q2").checked)
+ score++;
+ if (document.getElementById("q4").checked)
+ score++;
+ if (document.getElementById("q5").checked)
+ score++;
+ if (document.getElementById("q6").checked)
+ score++;
+ if (document.getElementById("q7").checked)
+ score++;
+ if (document.getElementById("q8").checked)
+ score++;
+ if (document.getElementById("q9").checked)
+ score++;
+ if (document.getElementById("q10").checked)
+ score++;
+ alert("Congrats mate! You scored " + score + ".");
+ }
+ </script>
+ </body>
+ </html>

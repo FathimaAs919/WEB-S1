@@ -1,0 +1,29 @@
+<html>
+<head><title>buttonclick</title></head>
+<body>
+    <h1 id="h">this is heading</h1>
+    change background:
+        <button onclick="funbck('pink')">pink</button>
+        <button onclick="funbck('green')">green</button>
+        <button onclick="funbck('yellow')">yellow</button><br>
+        change heading background:
+        <button onclick="funhead('pink')">pink</button>
+        <button onclick="funhead('green')">green</button>
+        <button onclick="funhead('yellow')">yellow</button>
+    
+<script>
+   function funbck(color)
+    {
+        document.body.style.background=color;
+    }
+       
+   function funhead(color)
+    {
+        var c=document.getElementById("h");
+        c.style.background=color;
+        
+    }
+</script>
+
+</body>
+</html>

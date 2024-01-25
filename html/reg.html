@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>registration</title>
+    </head>
+    <body  align="center" bgcolor="pink">
+      <div style="color:red ; background-color: palegoldenrod;" > <h1 >REGISTRATION FORM</h1></div> 
+        <form >
+
+        <table   align="center" style="color: green; background-color: palegoldenrod;" ><tr>
+       <td> Userid:</td><td><input type="text" name="number" id="number" ></td></tr></br>
+       <tr> <td>   password:</td><td><input type="password" id="pass"><br></td></tr>
+       <tr><td>  name:</td><td><input type="text" id="name"><br></td></tr>
+       <tr> <td>  address:</td><td><input type="text"><br></td></tr>
+       <tr><td>  country:</td><td><select>select
+        <option>india</option>
+        <option>china</option>
+    </select><br></td></tr>
+    <tr><td> pincode:</td><td><input type="text"><br></td></tr>
+    <tr><td>  email:</td><td><input type="email"><br></td></tr>
+    <tr><td>   gender:</td><td><input type="radio" name="female">female<input type="radio" name="male">male<br><input type="radio" name="other">other<br></td></tr>
+   <tr><td>  language:</td><td><input type="checkbox" name="english">English<input type="checkbox" name="malayalam">Malayalam<br></td></tr>
+   <tr> <td>  about:</td><td><textarea></textarea><br></td></tr>
+  <tr>  <td>  submit:</td><td><button onclick="reg()">submit</button></td></tr>
+</table>
+</form>
+<script>
+    function reg()
+    {
+     var userid=document.getElementById("number").value;
+    if(userid=="")
+    {
+        alert("enter userid");
+    
+    document.form.userid.focus();
+    
+     return false;}
+    else if(userid.length<5||userid.length>12)
+    {
+    alert("incorrect");
+    document.form.userid.focus();
+    return false;
+    }
+    var pass=document.getElementById("pass").value;
+    if(pass=="")
+    {
+        alert("enter password");
+    
+    document.form.pass.focus();
+    
+     return false;}
+     else if(pass.length<8)
+    {
+    alert("use min 8 digit");
+    document.form.pass.focus();
+    return false;
+    }
+    var letters=/^[A-Za-z]+$/;
+    
+    var name=document.getElementById("name").value;
+    if(name=="")
+    {
+        alert("enter name");
+    
+    document.form.name.focus();
+    
+     return false;}
+     else if(letters.match(name))
+    {
+    alert("username invalid");
+    document.form.pass.focus();
+    return false;
+    }
+    
+
+}
+
+</script>
+    </body>
+</html>
